@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFME 第10屆寶貝造型選拔賽</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body id="event" class="pc-bg overflow-y-auto">
+    <nav class="nav">
+        <ul class="menu-nav">
+            <li class="menu-nav__item"><a class="menu-nav__link" href="rule.html">活動辦法</a></li>
+            <li class="menu-nav__item active"><a class="menu-nav__link" href="event.html">寶貝造型選拔賽</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="list.html">麻豆票選</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="winner.html">得獎名單</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.ifmekids.com.tw/pdApplication.asp" target="_blank">IFME童鞋的秘密</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.ifmekids.com.tw/prod.asp" target="_blank">IFME2022新款</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.ifmekids.com.tw/store.asp" target="_blank">經銷實體店點</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="https://bit.ly/3xvZcsx" target="_blank">官方電商平台</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <a href="index.html"><img src="img/btn_logo.png"></a>
+        <button type="button" class="btn_menu"><img src="img/btn_menu.png"></button>
+    </div>
+    <div class="mobile">
+        <img src="img/title.png" class="title">
+        <img src="img/event_title.png" class="title_event">
+        <div class="step1">
+            <img src="img/event_step1.png" class="step">
+            <img src="img/event_step1-info.png" class="info">
+            <input type="file" name="photo" id="photo" accept=".png, .jpg, .jpeg">
+            <img src="img/event_upload.png" class="btn_upload">
+            <div class="celebrity img-center" style="margin-top: 2rem;">
+                <img src="img/ModelSample.jpg" class="model">
+                <img src="img/celebrity.png" class="border-img">
+            </div>
+            <div class="info2">
+                請確認上傳照片是否正確，一但進行下一步就不得再修正·主辦單位有權審核，寶寶是否符合參加條件。
+            </div>
+            <button type="button" class="btn_next"> <img src="img/event_btn_next.png"> </button>
+            <img src="img/list_pic.png" class="event_pic">
+        </div>
+        <div class="step2">
+            <img src="img/event_step2.png" class="step">
+            <div class="input-group">
+                <span class="input-group-text" id="parent-name">家長姓名</span>
+                <input type="text" class="form-control" placeholder="請輸入你的姓名" aria-label="請輸入你的姓名" aria-describedby="parent-name">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text" id="phone">手機號碼</span>
+                <input type="text" class="form-control" placeholder="請輸入你的手機號碼" aria-label="請輸入你的手機號碼" aria-describedby="phone">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text" id="e-mail">E-Mail</span>
+                <input type="text" class="form-control" placeholder="請輸入你的E-Mail" aria-label="請輸入你的E-Mail" aria-describedby="e-mail">
+            </div>
+            <div class="twzipcode">
+                <div class="select-group">
+                    <span class="input-group-text">聯絡地址</span>
+                    <div class="w-40" data-role="county" data-css="form-select" ></div>
+                    <div class="w-40" data-role="district" data-css="form-select"></div>
+                    <div class="w-80 ml-20"><input type="text" class="form-control"></div>
+                </div>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text" id="baby-name">寶寶暱稱</span>
+                <input type="text" class="form-control" placeholder="請輸入你的寶寶暱稱" aria-label="請輸入你的寶寶暱稱" aria-describedby="baby-name">
+            </div>
+            <div class="select-group">
+                <span class="input-group-text">寶寶生日</span>
+                <div class="w-26">
+                    <select id="BirthYear" class="form-select">
+                        <option selected>年</option>
+                    </select>
+                </div>
+                <div class="w-26">
+                    <select id="BirthMonth" class="form-select">
+                        <option selected>月</option>
+                    </select>
+                </div>
+                <div class="w-26">
+                    <select id="BirthDay" class="form-select">
+                        <option selected>日</option>
+                    </select>
+                </div>
+            </div>
+            <div class="select-group">
+                <span class="input-group-text">腳ㄚ長度</span>
+                <div class="w-80">
+                    <select id="feet-length" class="form-select">
+                        <option selected>請選擇尺寸</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group" style="margin-top: 2rem;">
+                <input type="checkbox" id="check1">
+                <label for="check1">我已確認寶寶穿著IFME鞋款，並清楚看到童鞋。</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="check2">
+                <label for="check2">我同意本活動之<a href="rule.html" target="_blank">詳細條款</a></label>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn_prev"> <img src="img/event_btn_prev.png"> </button>
+                <button type="button" class="btn_next"> <img src="img/event_btn_next.png"> </button>
+            </div>
+            <div class="heed">
+                <p>注意事項</p>
+                <ul>
+                    <li>以上欄位均為必填，資料作為得獎聯繫用，不會公開於網路上 (除了寶寶暱稱)，請如實填寫。</li>
+                    <li>請確實填寫寶寶腳ㄚ長度，確認送出後不得修改資料。</li>
+                    <li>提供本活動之照片，視同同意授權主辦單位IFME及嬰兒與母親mababy刊登。</li>
+                </ul>
+            </div>
+            <img src="img/list_pic.png" class="event_pic">
+        </div>
+        <div class="step3">
+            <img src="img/event_step3.png" class="step">
+            <div class="celebrity img-center" style="margin-top: 2rem;">
+                <img src="img/ModelSample.jpg" class="model">
+                <img src="img/celebrity.png" class="border-img">
+            </div>
+            <p>快分享寶貝至Facebook塗鴉牆上，記得 <span class="text-primary">設定公開，分享成功</span> 才算參加完成唷~也讓親朋好友一起來幫寶貝投票唷!!</p>
+            <button type="button" class="btn_share">Facebook分享</button>
+            <img src="img/list_pic.png" class="event_pic">
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/ifmeshoes/" target="_blank"><img src="img/btn_fb.jpg"></a>
+        <span>&copy; 2022婦幼多媒體事業集團 All Rights Reserved</span>
+    </div>
+    <script src="twzipcode.js"></script>
+    <script src="all.js"></script>
+    <script>
+        const twzipcode = new TWzipcode(".twzipcode");
+        $(document).ready(function() {
+            $(".step1 .btn_next").click(function() {
+                $(".step1").hide();
+                $(".step2").show();
+            });
+            $(".step2 .btn_prev").click(function() {
+                $(".step2").hide();
+                $(".step1").show();
+            });
+            $(".step2 .btn_next").click(function() {
+                $(".step2").hide();
+                $(".step3").show();
+            });
+        });
+    </script>
+</body>
+</html>
